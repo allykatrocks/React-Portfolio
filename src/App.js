@@ -13,7 +13,7 @@ function App() {
       return <Contact />;
     } else if (currentPage === "Portfolio") {
       return <Portfolio />;
-    } else {
+    } else if (currentPage === "Resume") {
       return <Resume />;
     }
   };
@@ -48,7 +48,7 @@ function App() {
           onClick={() => {
             setCurrentPage("Resume");
           }}
-          href="Resume"
+          href="#Resume"
         >
           Resume
         </a>
