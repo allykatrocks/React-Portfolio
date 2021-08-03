@@ -11,11 +11,16 @@ const Contact = () => {
 
   const handleChange = (e) => {
     e.preventDefault();
-
-    if (!errorMessage) {
-      setFormState({ ...formState, [e.target.name]: e.target.value });
-      console.log("state changed", formState);
+    console.log(formState.message.length)
+    setErrorMessage('')
+    if (formState.message.length < 5) {
+      setErrorMessage("Message too short")
     }
+    if (!formState.email.match(/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/)) {
+      console.log(formState.email.match)
+      setErrorMessage('Invalid email')
+    }
+    
   };
 
   const submitChange = (e) => {
@@ -25,6 +30,11 @@ const Contact = () => {
     }
   };
 
+  const handleOnChange = (e) => {
+      setFormState({ ...formState, [e.target.name]: e.target.value });
+      console.log("state changed", formState);
+  }
+
   return (
     <section>
       <form id="contact-form" onSubmit={submitChange}>
@@ -33,12 +43,29 @@ const Contact = () => {
           <input
             type="text"
             name="name"
-            defaultValue={formState.name}
+            value={formState.name}
             onBlur={handleChange}
+            onChange={handleOnChange}
           />
         </div>
-        <div></div>
-        <div></div>
+        <div><label htmlFor="email">Email:</label>
+          <input
+            type="text"
+            name="email"
+            value={formState.email}
+            onBlur={handleChange}
+            onChange={handleOnChange}
+          /></div>
+        <div>
+        <label htmlFor="message">Message:</label>
+          <textarea
+            rows = '5'
+            name="message"
+            value={formState.message}
+            onBlur={handleChange}
+            onChange={handleOnChange}
+          />
+        </div>
         {errorMessage && (
           <div>
             <p>{errorMessage}</p>

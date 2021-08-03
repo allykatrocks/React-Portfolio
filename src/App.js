@@ -3,6 +3,7 @@ import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import Resume from "./pages/Resume";
+import "./App.css";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("About Me");
@@ -19,40 +20,41 @@ function App() {
   };
   return (
     <div>
-      <div>
-        <a
-          onClick={() => {
-            setCurrentPage("About Me");
-          }}
-          href="#AboutMe"
-        >
-          About Me
-        </a>
-        <a
-          onClick={() => {
-            setCurrentPage("Contact");
-          }}
-          href="#Contact"
-        >
-          Contact
-        </a>
-        <a
-          onClick={() => {
-            setCurrentPage("Portfolio");
-          }}
-          href="#Portfolio"
-        >
-          Portfolio
-        </a>
-        <a
-          onClick={() => {
-            setCurrentPage("Resume");
-          }}
-          href="#Resume"
-        >
-          Resume
-        </a>
-      </div>
+      <header>
+        <h1>Alex DeMarco</h1>
+        {/* <div> */}
+          <ul className="navbar">
+            <li className={currentPage === 'About Me' ? "active": ""}
+              onClick={() => {
+                setCurrentPage("About Me");
+              }}
+            >
+              About Me
+            </li>
+            <li
+              onClick={() => {
+                setCurrentPage("Contact");
+              }}
+            >
+              Contact
+            </li>
+            <li
+              onClick={() => {
+                setCurrentPage("Portfolio");
+              }}
+            >
+              Portfolio
+            </li>
+            <li
+              onClick={() => {
+                setCurrentPage("Resume");
+              }}
+            >
+              Resume
+            </li>
+          </ul>
+        {/* </div> */}
+      </header>
       {getCurrentPage()}
     </div>
   );
