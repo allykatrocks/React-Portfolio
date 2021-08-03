@@ -31,21 +31,21 @@ function App() {
             >
               About Me
             </li>
-            <li
+            <li className={currentPage === 'Contact' ? "active": ""}
               onClick={() => {
                 setCurrentPage("Contact");
               }}
             >
               Contact
             </li>
-            <li
+            <li className={currentPage === 'Portfolio' ? "active": ""}
               onClick={() => {
                 setCurrentPage("Portfolio");
               }}
             >
               Portfolio
             </li>
-            <li
+            <li className={currentPage === 'Resume' ? "active": ""}
               onClick={() => {
                 setCurrentPage("Resume");
               }}
