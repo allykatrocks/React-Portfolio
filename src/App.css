@@ -31,3 +31,14 @@ li:hover {
   color: aliceblue;
 }
 
+.Me {
+  height: 400px;
+  width: 50%;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 25%;
+  background-image: url("./assets/images/my\ face.jpg");
+  background-size: cover;
+  background-position: center;
+}
+

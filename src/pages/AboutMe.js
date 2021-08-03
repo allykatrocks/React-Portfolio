@@ -1,8 +1,10 @@
 import React from 'react';
 
+
 const AboutMe = () => {
     return (<section class="about-me" id="about-me">
     <h2>About Me</h2>
+    <div className="Me"></div>
     <p>
       Hello! My name is Alex and I'm a junior web developer. I am a graduate
       of San Diego State University with a Bachelor's degree in Theater
