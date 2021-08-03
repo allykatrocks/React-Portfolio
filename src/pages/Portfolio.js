@@ -1,6 +1,9 @@
 import React from "react";
 import Sports_Image from "../assets/images/sports app.png";
-import Weather_Image from "../assets/images/final weather dashboard.png"
+import Weather_Image from "../assets/images/final weather dashboard.png";
+import Ballad_Image from "../assets/images/ballad.png";
+import Employee_Image from "../assets/images/employee.png";
+import Planner_Image from "../assets/images/planner.png";
 
 const Portfolio = () => {
   let projects = [
@@ -18,6 +21,27 @@ const Portfolio = () => {
       github_url: "https://github.com/allykatrocks/homework-weather",
       repo_name: 'Weather Repo'
     },
+    {
+      name: "Ballad Dating App",
+      location: "https://github.com/ericrudeen/rockstar-group",
+      imagePath: Ballad_Image,
+      github_url: "https://ballad-ucsd.herokuapp.com/",
+      repo_name: 'Heroku App',
+    },
+    {
+      name: "Employee Tracker",
+      location: "https://github.com/allykatrocks/homework-employee-tracker",
+      imagePath: Employee_Image,
+      github_url: "https://github.com/allykatrocks/homework-employee-tracker",
+      repo_name: 'Employee Tracker',
+    },
+    {
+      name: "Day Planner",
+      location: "https://allykatrocks.github.io/homework-planner/",
+      imagePath: Planner_Image,
+      github_url: "https://github.com/allykatrocks/homework-planner",
+      repo_name: 'Day Planner',
+    }
   ];
   return (
     <section class="my-work" id="my-work">
@@ -37,58 +61,8 @@ const Portfolio = () => {
         );
       })}
       <div class="flex-row">
-        <section>
-          <h3>Ballad Dating App</h3>
-          <a href="https://github.com/ericrudeen/rockstar-group">
-            <img
-              class="work-small-images"
-              height="200"
-              width="200"
-              src="./images/ballad.png"
-            />
-          </a>
-          <p>
-            Heroku Link:<a href="https://ballad-ucsd.herokuapp.com/">Ballad</a>
-          </p>
-        </section>
-        <section>
-          <h3>Employee Tracker</h3>
-          <a href="https://github.com/allykatrocks/homework-employee-tracker">
-            <img class="work-small-images" src="./images/employee.png" />
-          </a>
-        </section>
       </div>
       <div class="flex-row">
-        <section>
-          <h3>Day Planner</h3>
-          <a href=" https://allykatrocks.github.io/homework-planner/">
-            <img
-              class="work-small-images"
-              width="200"
-              src="./images/planner.png"
-            />
-          </a>
-          <p>
-            Link to Github Repo:
-            <a href="https://github.com/allykatrocks/homework-planner">
-              Planner Repo
-            </a>
-          </p>
-        </section>
-        <a href="https://github.com/allykatrocks">
-          <img
-            class="work-small-images"
-            height="200"
-            width="200"
-            src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/empty-paved-road-at-sunset-in-the-chilean-patagonia-royalty-free-image-1591901619.jpg"
-          />
-        </a>
-        <a href="https://github.com/allykatrocks">
-          <img
-            class="work-small-images"
-            src="https://www.wakesmiles.org/wp-content/uploads/2018/02/female-placeholder-300x300.jpg"
-          />
-        </a>
       </div>
     </section>
   );
