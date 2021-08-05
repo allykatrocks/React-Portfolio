@@ -50,3 +50,16 @@ footer {
   display: grid;
 }
 
+@media screen and (max-width: 768px) {
+  .flex-row {
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+nav {
+  padding-top: 0;
+  margin-right: 0;
+  float: none;
+}
+}
