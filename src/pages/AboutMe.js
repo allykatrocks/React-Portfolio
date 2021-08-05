@@ -10,7 +10,7 @@ const AboutMe = () => {
       of San Diego State University with a Bachelor's degree in Theater
       Arts. I began my coding journey in December of 2020 in order to gain
       profitable and relevant skills I can take with me to any career field.
-      Please find below a collection of my completed and deployed works as
+      Please find in this portfolio a collection of my completed and deployed works as
       well as how to contact me.
     </p>
   </section>)
