@@ -4,6 +4,7 @@ import Weather_Image from "../assets/images/final weather dashboard.png";
 import Ballad_Image from "../assets/images/ballad.png";
 import Employee_Image from "../assets/images/employee.png";
 import Planner_Image from "../assets/images/planner.png";
+import Blog_Image from "../assets/images/techblog.png";
 
 const Portfolio = () => {
   let projects = [
@@ -41,6 +42,13 @@ const Portfolio = () => {
       imagePath: Planner_Image,
       github_url: "https://github.com/allykatrocks/homework-planner",
       repo_name: 'Day Planner',
+    },
+    {
+      name: "Tech Blog",
+      location: "https://bcs-tech-blog.herokuapp.com",
+      imagePath: Blog_Image,
+      github_url: "https://github.com/allykatrocks/homework-techblog",
+      repo_name: "Blog on Heroku",
     }
   ];
   return (
