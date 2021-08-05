@@ -59,7 +59,9 @@ function App() {
         </ul>
         {/* </div> */}
       </header>
+      <div className="body-content">
       {getCurrentPage()}
+      </div>
       <footer>
       <h2>Contact Me</h2>
         <ul>

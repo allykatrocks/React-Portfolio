@@ -40,6 +40,7 @@ const Contact = () => {
       <form id="contact-form" onSubmit={submitChange}>
         <div>
           <label htmlFor="name">Name:</label>
+          <br/>
           <input
             type="text"
             name="name"
@@ -49,6 +50,7 @@ const Contact = () => {
           />
         </div>
         <div><label htmlFor="email">Email:</label>
+        <br/>
           <input
             type="text"
             name="email"
@@ -58,6 +60,7 @@ const Contact = () => {
           /></div>
         <div>
         <label htmlFor="message">Message:</label>
+        <br/>
           <textarea
             rows = '5'
             name="message"

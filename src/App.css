@@ -42,12 +42,39 @@ li:hover {
   background-position: center;
 }
 
+.body-content {
+  margin-bottom: 10px;
+}
+
 footer {
   background-color: lightblue;
+  margin-top: auto;
+  position: static;
+  bottom: 0;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .skills {
   display: grid;
+}
+
+.my-work {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 400px;
+  justify-content: space-between;
+  margin-left: 30%;
+}
+
+.block {
+  width: 40%;
+}
+
+.work-large-image {
+  width: 200px;
+  height: 200px;
 }
 
 @media screen and (max-width: 768px) {
