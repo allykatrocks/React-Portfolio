@@ -76,7 +76,7 @@ function App() {
               Facebook</a>
           </li>
           <li>
-            <a href="www.linkedin.com/in/alex-demarco-002906b7">
+            <a href="https://www.linkedin.com/in/alexdemarco1995">
               LinkedIn</a>
           </li>
           <li>
