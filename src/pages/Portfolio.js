@@ -14,6 +14,8 @@ const Portfolio = () => {
       imagePath: Sports_Image,
       github_url: "https://github.com/maxwellstickels/sports-app/",
       repo_name: "MLB Repo",
+      project_summary:
+        "A website for avid baseball fans that uses Third Party APIs to retrieve stats on players and teams.",
     },
     {
       name: "Weather Forecast App",
@@ -21,6 +23,8 @@ const Portfolio = () => {
       imagePath: Weather_Image,
       github_url: "https://github.com/allykatrocks/homework-weather",
       repo_name: "Weather Repo",
+      project_summary:
+        "A weather forecast app that uses Server-Side APIs to produce the current and 5 day forecast for any US city.",
     },
     {
       name: "Ballad Dating App",
@@ -28,6 +32,7 @@ const Portfolio = () => {
       imagePath: Ballad_Image,
       github_url: "https://ballad-ucsd.herokuapp.com/",
       repo_name: "Heroku App",
+      project_summary: "A dating app that uses a MySql database to match people based on shared music interests.",
     },
     {
       name: "Employee Tracker",
@@ -35,6 +40,7 @@ const Portfolio = () => {
       imagePath: Employee_Image,
       github_url: "https://github.com/allykatrocks/homework-employee-tracker",
       repo_name: "Employee Tracker",
+      project_summary: "A tracking system that also utilizes a MySql database to keep track of a company's employees.",
     },
     {
       name: "Day Planner",
@@ -42,6 +48,7 @@ const Portfolio = () => {
       imagePath: Planner_Image,
       github_url: "https://github.com/allykatrocks/homework-planner",
       repo_name: "Day Planner",
+      project_summary: "A work planner that uses Moment.js and Third Party APIs to plan out one's day.",
     },
     {
       name: "Tech Blog",
@@ -49,6 +56,7 @@ const Portfolio = () => {
       imagePath: Blog_Image,
       github_url: "https://github.com/allykatrocks/homework-techblog",
       repo_name: "Blog on Heroku",
+      project_summary: "A blog that uses MVC and Handlebar.js for developers to share ideas."
     },
   ];
   return (
@@ -66,6 +74,7 @@ const Portfolio = () => {
                 Link to Github repo:
                 <a href={project.github_url}>{project.repo_name}</a>
               </p>
+              <p>{project.project_summary}</p>
             </div>
           );
         })}
